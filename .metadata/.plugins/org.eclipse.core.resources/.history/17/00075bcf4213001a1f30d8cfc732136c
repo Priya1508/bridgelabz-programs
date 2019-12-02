@@ -1,0 +1,17 @@
+package com.bridgelabz.fellowshipprogram.functional;
+
+import com.bridgelabz.fellowshipprogram.utility.Utility;
+
+public class Array2d {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter size of array: ");
+		int n=Utility.inputInteger();
+		
+		System.out.println("Enter the elements in array: ");
+	
+
+	}
+
+}

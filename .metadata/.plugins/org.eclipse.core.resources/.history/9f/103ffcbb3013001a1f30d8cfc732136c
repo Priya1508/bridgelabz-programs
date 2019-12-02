@@ -1,0 +1,14 @@
+package com.bridgelabz.fellowshipprogram.basic;
+
+import com.bridgelabz.fellowshipprogram.utility.Utility;
+
+public class powerof2 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a number");
+		int num=Utility.inputInteger();
+		Utility.powerOf2(num);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.bridgelabz.fellowshipprogram.basic;
+
+import com.bridgelabz.fellowshipprogram.utility.Utility;
+
+public class Leapyear {
+
+	public static void main(String[] args) {
+		System.out.println("Enter year: ");
+		int year=Utility.inputInteger();
+		Utility.leapYear(year);
+
+	}
+
+}

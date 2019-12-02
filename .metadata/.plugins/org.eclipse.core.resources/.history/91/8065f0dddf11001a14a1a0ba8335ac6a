@@ -1,0 +1,39 @@
+package basics;
+
+import java.util.Scanner;
+
+public class InsertinStringarr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int i;
+		System.out.println("Enter the size of the string: ");
+		int n=sc.nextInt();
+		
+		String str[]=new String[n+1];
+		System.out.println("Enter elements in string: ");
+		for(i=0;i<n;i++) {
+			str[i]=sc.nextLine();
+		}
+		System.out.print(str[i]+" ");
+		
+		System.out.println("Enter the position to insert: ");
+		int pos=sc.nextInt();
+		System.out.println("Enter the string you want to insert: ");
+		String x=sc.nextLine();
+		
+		for(i=str.length-1;i>=(pos-1);i--) {
+			str[i+1]=str[i];
+		}
+		str[pos-1]=x;
+		
+		System.out.println("After inserting");
+		for(i=0;i<n;i++) {
+			System.out.print(str[i]+" ");
+		}
+		System.out.println(str[n]);
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package basics;
+
+import java.util.Scanner;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String arr[]= {"a","b","c","d","e","f","g"};
+		System.out.println("Enter element want to search: ");
+		Scanner sc=new Scanner (System.in);
+		String n=sc.nextLine();
+		String l=0;
+		String r=arr.length,mid;
+		
+		for(int i=0;i<arr.length;i++) {
+			mid=(l+r)/2;
+		
+			if(n==arr[mid]) {
+				System.out.println("Element found at "+arr[mid]);
+				
+		}
+			else if(n.compareTo(arr[mid])>0) {
+				l=arr[mid+1];
+			}
+				
+
+	}
+
+	}
+}

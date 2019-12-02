@@ -1,0 +1,14 @@
+package com.bridgelabz.fellowshipprogram.basic;
+
+import com.bridgelabz.fellowshipprogram.utility.Utility;
+
+public class Harmonicnumber {
+
+	public static void main(String[] args) {
+		System.out.println("Enter a number: ");
+		float sum=0;
+		int num=Utility.inputInteger();
+		Utility.harmonicNumber(num, sum);
+	}
+
+}

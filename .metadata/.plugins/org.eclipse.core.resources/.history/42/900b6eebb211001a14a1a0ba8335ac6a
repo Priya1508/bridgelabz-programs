@@ -1,0 +1,41 @@
+package basics;
+
+import java.util.Scanner;
+
+public class Insertatgivenindex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//int arr[]= {1,2,3,4,5};
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter size of array: ");
+		int a=sc.nextInt();
+		int arr[]= new int[a+1];
+		int i;
+		System.out.println("Enter the elements in array: ");
+		for(i=0;i<arr.length;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		System.out.print(arr+" ");
+		
+		System.out.println("Insert the index position: ");
+		int pos=sc.nextInt();
+		System.out.println("Enter the element: ");
+		int e=sc.nextInt();
+			int j=0;
+			for(j=a-1;j>=pos-1;j--) {
+				arr[j]=arr[j+1];
+			}
+			
+				arr[pos-1]=e;
+				pos++;
+			for(int k=0; k<=arr.length;k++)
+			{
+			System.out.print(arr[k]+" ");
+			}
+		}
+
+	}
+	
+

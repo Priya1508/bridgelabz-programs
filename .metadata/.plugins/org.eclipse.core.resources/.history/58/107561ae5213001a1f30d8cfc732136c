@@ -1,0 +1,21 @@
+package com.bridgelabz.fellowshipprogram.functional;
+
+import com.bridgelabz.fellowshipprogram.utility.Utility;
+/**
+ * Purpose : Takes two integer comman-line arguments x and y and prints the Euclidean distance from the point (x,y) to the origin(0,0).
+ * @author : Priya Nagare
+ * @Date : 30 Nov 2019
+ *
+ */
+
+public class Minidist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]= {1,4,5,6,8,3,9,0,4};
+		int n=a.length;
+		int x=1,y=9;
+		Utility.miniDist(a, n, x, y);
+	}
+}
